@@ -30,11 +30,12 @@ const App = () => {
   // Not abel to clear interval hence, did the optional rendering only if the value > 0, if it's < 0, then time over will be shown.
   return (
     <>
-      <p><ul>
+      <ul>
         <li>Please don't press enter key again, if the timer is already running.</li>
         <li>You can change the timer value, while its running, on value change it will start from the new value.</li>
         <li>If you want to run the timer again, refresh page and enter the value and press Enter key</li>
-      </ul></p>
+        <li>You can't start the timer with negative value, if you enter negative value, is will show time over</li>
+      </ul>
       <input
         id="timeCount"
         type="number"
